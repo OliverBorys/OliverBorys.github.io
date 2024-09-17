@@ -2,7 +2,7 @@
 <html lang="sv">
   <head>
     <title>Svart T-Shirt</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,14 +27,14 @@
               <input type="text" name="Sök produkt" placeholder="Sök produkt" />
             </div>
           </div>
-          <a href="" onclick="alert('Knappen klickades!')">
+          <a href="#" onclick="alert('Knappen klickades!')">
             <img
               src="images/full-favorite.svg"
               alt="Liked"
               class="liked-icon"
             />
           </a>
-          <a href="" onclick="alert('Knappen klickades!')">
+          <a href="http://127.0.0.1:5501/checkout.html">
             <img
               src="images/checkout.svg"
               alt="Checkout"
@@ -44,44 +44,47 @@
         </div>
       </div>
 
-      <ul class="list">
-        <li>
+      <div class="header-list">
+        <div>
           <button class="list-button" onclick="alert('Knappen klickades!')">
-            Nyheter
+            <p>Nyheter</p>
           </button>
-        </li>
-        <li>
+        </div>
+        <div>
           <button class="list-button" onclick="alert('Knappen klickades!')">
-            Topplistan
+            <p>Kategorier</p>
           </button>
-        </li>
-        <li>
+        </div>
+        <div>
           <button class="list-button" onclick="alert('Knappen klickades!')">
-            Rea
+            <p>Topplistan</p>
           </button>
-        </li>
-        <li>
+        </div>
+        <div>
           <button class="list-button" onclick="alert('Knappen klickades!')">
-            Kampanjer
+            <p>Rea</p>
           </button>
-        </li>
-      </ul>
+        </div>
+        <div>
+          <button class="list-button" onclick="alert('Knappen klickades!')">
+            <p>Kampanjer</p>
+          </button>
+        </div>
+      </div>
     </header>
-    
+
     <main>
       <div class="product-container">
         <div class="product-img-container">
-          <a href="#">
             <img
               src="https://placehold.co/450x600"
               alt="Bild på svart t-shirt"
             />
-          </a>
           <button class="favorite-button" onclick="alert('Knappen klickades!')">
             <img src="/images/favorite.svg" alt="favorite-button-icon" />
           </button>
         </div>
-        <div class="product-info">
+        <div class="product-container-info">
           <h2>Svart T-Shirt</h2>
           <p>Levis</p>
           <p>
@@ -95,329 +98,326 @@
           </button>
         </div>
       </div>
+    </main>
 
-      <div class="carousel">
-        <h2
-          style="
-            text-align: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            @media (max-width: 640px) {
-              display: none;
-            }
-          "
-        >
-          Liknande produkter
-        </h2>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
-          <!-- data-bs-ride="carousel" för att sätta på autoplay -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <!--skapar en rad-->
-                <div class="col-4">
-                  <!--Delar upp raden, 12/4=3-->
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
+    <div class="carousel">
+      <h2
+        style="
+          text-align: center;
+          padding-top: 50px;
+          @media (max-width: 640px) {
+            display: none;
+          }
+        "
+      >
+        Liknande produkter
+      </h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+        <!-- Hur får man den att inte auto spela -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
                   </div>
-                </div>
-                <div class="col-4">
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
                   </div>
-                </div>
-                <div class="col-4">
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
-                  </div>
+                  <p>Levis</p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
                   </div>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
+                  </div>
+                  <p>Levis</p>
                 </div>
-                <div class="col-4">
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
+              </div>
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
                   </div>
-                </div>
-                <div class="col-4">
-                  <div class="similar-product-content">
-                    <div class="similar-product-img-container">
-                      <a href="http://127.0.0.1:5501/product-details.html">
-                        <img
-                          src="https://placehold.co/400x500"
-                          alt="Bild på svart t-shirt"
-                        />
-                      </a>
-                    </div>
-                    <div class="similar-product-info">
-                      Svart T-Shirt
-                      <span>199 SEK</span>
-                    </div>
-                    <p>Levis</p>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
                   </div>
+                  <p>Levis</p>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
+                  </div>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
+                  </div>
+                  <p>Levis</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
+                  </div>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
+                  </div>
+                  <p>Levis</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="similar-product-content">
+                  <div class="similar-product-img-container">
+                    <a href="http://127.0.0.1:5501/product-details.html">
+                      <img
+                        src="https://placehold.co/400x500"
+                        alt="Bild på svart t-shirt"
+                      />
+                    </a>
+                  </div>
+                  <div class="similar-product-info">
+                    Svart T-Shirt
+                    <span>199 SEK</span>
+                  </div>
+                  <p>Levis</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </main>
+    </div>
 
     <footer>
       <ul class="info-list">
-        <li>
-          <button
-            class="info-list-button"
-            onclick="alert('Knappen klickades!')"
-          >
-            <a href="">
-              <img src="images/globe.svg" alt="" />
-              Gratis frakt och returer
-            </a>
-          </button>
-        </li>
-        <li>
-          <button
-            class="info-list-button"
-            onclick="alert('Knappen klickades!')"
-          >
-            <a href="">
-              <img src="images/plane.svg" alt="" />
-              Expressfrakt
-            </a>
-          </button>
-        </li>
-        <li>
-          <button
-            class="info-list-button"
-            onclick="alert('Knappen klickades!')"
-          >
-            <a href="">
-              <img src="images/shield.svg" alt="" />
-              Säkra betalningar
-            </a>
-          </button>
-        </li>
-        <li>
-          <button
-            class="info-list-button"
-            onclick="alert('Knappen klickades!')"
-          >
-            <a href="">
-              <img src="images/smiley.svg" alt="" />
-              Nyheter varje dag
-            </a>
-          </button>
-        </li>
-      </ul>
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+          <li>
             <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
+              class="info-list-button"
+              onclick="alert('Knappen klickades!')"
             >
-              <strong>Shopping</strong>
+              <a href="">
+                <img src="images/globe.svg" alt="" />
+                Gratis frakt och returer
+              </a>
             </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <ul>
-                <li>Vinterjackor</li>
-                <li>Pufferjackor</li>
-                <li>Kappa</li>
-                <li>Trenchcoats</li>
-              </ul>
+          </li>
+          <li>
+            <button
+              class="info-list-button"
+              onclick="alert('Knappen klickades!')"
+            >
+              <a href="">
+                <img src="images/plane.svg" alt="" />
+                Expressfrakt
+              </a>
+            </button>
+          </li>
+          <li>
+            <button
+              class="info-list-button"
+              onclick="alert('Knappen klickades!')"
+            >
+              <a href="">
+                <img src="images/shield.svg" alt="" />
+                Säkra betalningar
+              </a>
+            </button>
+          </li>
+          <li>
+            <button
+              class="info-list-button"
+              onclick="alert('Knappen klickades!')"
+            >
+              <a href="">
+                <img src="images/smiley.svg" alt="" />
+                Nyheter varje dag
+              </a>
+            </button>
+          </li>
+        </ul>
+  
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <strong>Shopping</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Vinterjackor</li>
+                  <li>Pufferjackor</li>
+                  <li>Kappa</li>
+                  <li>Trenchcoats</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong>Mina sidor</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
             >
-              <strong>Mina sidor</strong>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <ul>
-                <li>Mina ordrar</li>
-                <li>Mitt konto</li>
-              </ul>
+              <div class="accordion-body">
+                <ul>
+                  <li>Mina ordrar</li>
+                  <li>Mitt konto</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <strong>Kundtjänst</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
             >
-              <strong>Kundtjänst</strong>
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <ul>
-                <li>Returnpolicy</li>
-                <li>Integritetspolicy</li>
-              </ul>
+              <div class="accordion-body">
+                <ul>
+                  <li>Returnpolicy</li>
+                  <li>Integritetspolicy</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="footer">
+            <img src="images/copyright.svg" alt="" />
+            Freaky Fashion
+          </div>
         </div>
-        <div class="footer">
-          <img src="images/copyright.svg" alt="" />
-          Freaky Fashion
+  
+        <div class="table-container">
+          <table>
+            <head>
+              <tr>
+                <th>Shopping</th>
+                <th>Mina sidor</th>
+                <th>Kundtjänst</th>
+              </tr>
+            </head>
+            <tbody>
+              <tr>
+                <td>Vinterjackor</td>
+                <td>Mina ordrar</td>
+                <td>Returnpolicy</td>
+              </tr>
+              <tr>
+                <td>Pufferjackor</td>
+                <td>Mitt konto</td>
+                <td>Integritetspolicy</td>
+              </tr>
+              <tr>
+                <td>Kappa</td>
+              </tr>
+              <tr>
+                <td>Trenchcoats</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="footer">
+            <img src="images/copyright.svg" alt="" />
+            Freaky Fashion
+          </div>
         </div>
-      </div>
-
-      <div class="table-container">
-        <table>
-          <head>
-            <tr>
-              <th>Shopping</th>
-              <th>Mina sidor</th>
-              <th>Kundtjänst</th>
-            </tr>
-          </head>
-          <tbody>
-            <tr>
-              <td>Vinterjackor</td>
-              <td>Mina ordrar</td>
-              <td>Returnpolicy</td>
-            </tr>
-            <tr>
-              <td>Pufferjackor</td>
-              <td>Mitt konto</td>
-              <td>Integritetspolicy</td>
-            </tr>
-            <tr>
-              <td>Kappa</td>
-            </tr>
-            <tr>
-              <td>Trenchcoats</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="footer">
-          <img src="images/copyright.svg" alt="" />
-          Freaky Fashion
-        </div>
-      </div>
-    </footer>
+  </footer>
   </body>
 </html>
