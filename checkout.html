@@ -2,7 +2,6 @@
 <html lang="sv">
   <head>
     <title>Kassan</title>
-    <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +13,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
@@ -149,53 +150,49 @@
             <input type="text" name="e-mail" placeholder="" />
           </div>
         </div>
-
-        <!-- Adress ska ligga på linjen för adress form -->
-
-        <div class="adress-form">
-          <div>
-            <label>Gata</label>
-            <input
-              type="text"
-              name="street"
-              placeholder=""
-              required
-              maxlength="25"
-            />
+        <fieldset>
+          <legend>Adress</legend>
+          <div class="adress-form">
+            <div>
+              <label>Gata</label>
+              <input
+                type="text"
+                name="street"
+                placeholder=""
+                required
+                maxlength="25"
+                size="25"
+              />
+            </div>
+            <div>
+              <label>Postnummer</label>
+              <input
+                class="areacode"
+                type="number"
+                name="areacode"
+                placeholder=""
+                required
+              />
+            </div>
+            <div>
+              <label>Stad</label>
+              <input
+                class="city"
+                type="text"
+                name="city"
+                placeholder=""
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label>Postnummer</label>
-            <input
-              class="areacode"
-              type="text"
-              name="areacode"
-              placeholder=""
-              required
-              maxlength="25"
-            />
-          </div>
-          <div>
-            <label>Stad</label>
-            <input
-              class="city"
-              type="text"
-              name="city"
-              placeholder=""
-              required
-              maxlength="25"
-            />
-          </div>
-        </div>
-
+        </fieldset>
         <div class="checkbox-container">
           <input type="checkbox" id="checkbox" />
           <label for="checkbox">Jag vill ta emot nyhetsbrev</label>
         </div>
 
         <div class="buy-button-container">
-          <button class="buy-button">
-            Köp
-          </button>
+          <button class="buy-button">Köp</button>
         </div>
       </form>
     </main>
@@ -367,7 +364,9 @@
           </tbody>
         </table>
         <div class="footer">
-          <img src="images/copyright.svg" alt="" />
+          <a href="/admin/products/index.html"
+            ><img src="images/copyright.svg" alt=""
+          /></a>
           Freaky Fashion
         </div>
       </div>

@@ -1,0 +1,117 @@
+
+/* Gemensam styling */
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  grid-column: 1 / 6;
+}
+sidebar {
+  border-right: 2px solid black;
+  background-color: lightgray;
+  grid-column: 1 / 2;
+  height: 100%;
+  padding: 0 20px;
+}
+main {
+  grid-column: 2 / 6;
+  padding: 0 20px;
+}
+
+/* admin/products/index.html styling */
+body {
+  .adimistration-product {
+    display: flex;
+    justify-content: space-between;
+  }
+  #new-product-button {
+    position: relative;
+    top: 20px;
+    font-size: 1em;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #edit-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  table th,
+  table td {
+    font-weight: normal;
+    padding: 5px;
+    /* height: 28px; */
+  }
+  table thead th {
+    border: 2px solid black;
+    background-color: rgb(194, 194, 194);
+  }
+  table tbody td {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  table tbody td:last-child {
+    text-align: center;
+    width: 80px;
+  }
+  table tbody tr:last-child {
+    border-bottom: 2px solid black;
+  }
+  table tbody tr:nth-child(odd) {
+    background-color: rgb(234, 234, 234);
+  }
+  table tbody tr:nth-child(even) {
+    background-color: white;
+  }
+}
+
+/* admin/products/new.html styling */
+body {
+  .new-product-form div {
+    padding-bottom: 10px;
+  }
+  .new-product-form div label,
+  .new-product-form div input,
+  .new-product-form div textarea {
+    display: block;
+    padding: 5px;
+  }
+  .new-product-form div input {
+    width: 40%;
+  }
+  .new-product-form div textarea {
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    height: 15vh;
+  }
+  #checkbox {
+    margin-right: 10px;
+    text-align: left;
+    width: auto;
+    display: inline-block;
+  }
+  .add-button-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-bottom: 50px;
+  }
+}

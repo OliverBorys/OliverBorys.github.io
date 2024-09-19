@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Administration</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Administration</h1>
+    </header>
+    <sidebar>
+      <h2>Produkter</h2>
+    </sidebar>
+    <main>
+      <section class="new-product-form">
+        <h2>Ny produkt</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <!--Gör att man kan kolla svaret-->
+          <div>
+            <label>Namn</label>
+            <input
+              class="admin-form-input"
+              type="text"
+              name="name"
+              placeholder="Ange namn"
+              required
+              maxlength="50"
+            />
+          </div>
+
+          <div>
+            <label>Beskrivning</label>
+            <textarea placeholder="Ange beskrivning" id="textarea"></textarea>
+          </div>
+
+          <div>
+            <label>Bild</label>
+            <input type="file" name="file" placeholder="Välj fil" />
+          </div>
+
+          <div>
+            <label>SKU</label>
+            <input
+              class="admin-form-input"
+              type="text"
+              name="sku"
+              placeholder="Ange SKU"
+              pattern="([A-ZÅÄÖa]{3})([0-9]{3})"
+            />
+          </div>
+
+          <div>
+            <label>Pris</label>
+            <input
+              class="admin-form-input"
+              type="number"
+              name="price"
+              placeholder=""
+            />
+          </div>
+
+          <div>
+            <label>Publiceringsdatum</label>
+            <input
+              class="admin-form-input"
+              type="date"
+              name="publishing-date"
+            />
+          </div>
+
+          <div>
+            <p>Kategorier</p>
+            <label><input type="checkbox" id="checkbox" />T-shirt</label>
+            <label><input type="checkbox" id="checkbox" />Sommar</label>
+            <label><input type="checkbox" id="checkbox" />Byxor</label>
+            <label><input type="checkbox" id="checkbox" />Skor</label>
+          </div>
+
+          <button class="add-button-button">Lägg till</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

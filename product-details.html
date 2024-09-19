@@ -2,7 +2,6 @@
 <html lang="sv">
   <head>
     <title>Svart T-Shirt</title>
-    <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +13,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
@@ -76,10 +77,7 @@
     <main>
       <div class="product-container">
         <div class="product-img-container">
-            <img
-              src="https://placehold.co/450x600"
-              alt="Bild på svart t-shirt"
-            />
+          <img src="https://placehold.co/450x600" alt="Bild på svart t-shirt" />
           <button class="favorite-button" onclick="alert('Knappen klickades!')">
             <img src="/images/favorite.svg" alt="favorite-button-icon" />
           </button>
@@ -101,15 +99,7 @@
     </main>
 
     <div class="carousel">
-      <h2
-        style="
-          text-align: center;
-          padding-top: 50px;
-          @media (max-width: 640px) {
-            display: none;
-          }
-        "
-      >
+      <h2 style="text-align: center; @media (max-width: 640px) {display: none}">
         Liknande produkter
       </h2>
       <div id="carouselExample" class="carousel slide" data-bs-ride="false">
@@ -249,175 +239,177 @@
 
     <footer>
       <ul class="info-list">
-          <li>
+        <li>
+          <button
+            class="info-list-button"
+            onclick="alert('Knappen klickades!')"
+          >
+            <a href="">
+              <img src="images/globe.svg" alt="" />
+              Gratis frakt och returer
+            </a>
+          </button>
+        </li>
+        <li>
+          <button
+            class="info-list-button"
+            onclick="alert('Knappen klickades!')"
+          >
+            <a href="">
+              <img src="images/plane.svg" alt="" />
+              Expressfrakt
+            </a>
+          </button>
+        </li>
+        <li>
+          <button
+            class="info-list-button"
+            onclick="alert('Knappen klickades!')"
+          >
+            <a href="">
+              <img src="images/shield.svg" alt="" />
+              Säkra betalningar
+            </a>
+          </button>
+        </li>
+        <li>
+          <button
+            class="info-list-button"
+            onclick="alert('Knappen klickades!')"
+          >
+            <a href="">
+              <img src="images/smiley.svg" alt="" />
+              Nyheter varje dag
+            </a>
+          </button>
+        </li>
+      </ul>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
             <button
-              class="info-list-button"
-              onclick="alert('Knappen klickades!')"
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-              <a href="">
-                <img src="images/globe.svg" alt="" />
-                Gratis frakt och returer
-              </a>
+              <strong>Shopping</strong>
             </button>
-          </li>
-          <li>
-            <button
-              class="info-list-button"
-              onclick="alert('Knappen klickades!')"
-            >
-              <a href="">
-                <img src="images/plane.svg" alt="" />
-                Expressfrakt
-              </a>
-            </button>
-          </li>
-          <li>
-            <button
-              class="info-list-button"
-              onclick="alert('Knappen klickades!')"
-            >
-              <a href="">
-                <img src="images/shield.svg" alt="" />
-                Säkra betalningar
-              </a>
-            </button>
-          </li>
-          <li>
-            <button
-              class="info-list-button"
-              onclick="alert('Knappen klickades!')"
-            >
-              <a href="">
-                <img src="images/smiley.svg" alt="" />
-                Nyheter varje dag
-              </a>
-            </button>
-          </li>
-        </ul>
-  
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                <strong>Shopping</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li>Vinterjackor</li>
-                  <li>Pufferjackor</li>
-                  <li>Kappa</li>
-                  <li>Trenchcoats</li>
-                </ul>
-              </div>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Vinterjackor</li>
+                <li>Pufferjackor</li>
+                <li>Kappa</li>
+                <li>Trenchcoats</li>
+              </ul>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                <strong>Mina sidor</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li>Mina ordrar</li>
-                  <li>Mitt konto</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <strong>Kundtjänst</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li>Returnpolicy</li>
-                  <li>Integritetspolicy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer">
-            <img src="images/copyright.svg" alt="" />
-            Freaky Fashion
           </div>
         </div>
-  
-        <div class="table-container">
-          <table>
-            <head>
-              <tr>
-                <th>Shopping</th>
-                <th>Mina sidor</th>
-                <th>Kundtjänst</th>
-              </tr>
-            </head>
-            <tbody>
-              <tr>
-                <td>Vinterjackor</td>
-                <td>Mina ordrar</td>
-                <td>Returnpolicy</td>
-              </tr>
-              <tr>
-                <td>Pufferjackor</td>
-                <td>Mitt konto</td>
-                <td>Integritetspolicy</td>
-              </tr>
-              <tr>
-                <td>Kappa</td>
-              </tr>
-              <tr>
-                <td>Trenchcoats</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="footer">
-            <img src="images/copyright.svg" alt="" />
-            Freaky Fashion
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <strong>Mina sidor</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Mina ordrar</li>
+                <li>Mitt konto</li>
+              </ul>
+            </div>
           </div>
         </div>
-  </footer>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <strong>Kundtjänst</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Returnpolicy</li>
+                <li>Integritetspolicy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <img src="images/copyright.svg" alt="" />
+          Freaky Fashion
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <head>
+            <tr>
+              <th>Shopping</th>
+              <th>Mina sidor</th>
+              <th>Kundtjänst</th>
+            </tr>
+          </head>
+          <tbody>
+            <tr>
+              <td>Vinterjackor</td>
+              <td>Mina ordrar</td>
+              <td>Returnpolicy</td>
+            </tr>
+            <tr>
+              <td>Pufferjackor</td>
+              <td>Mitt konto</td>
+              <td>Integritetspolicy</td>
+            </tr>
+            <tr>
+              <td>Kappa</td>
+            </tr>
+            <tr>
+              <td>Trenchcoats</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer">
+          <a href="/admin/products/index.html"
+            ><img src="images/copyright.svg" alt=""
+          /></a>
+          Freaky Fashion
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
